@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SIRWITA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="../static/style.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">SIRWITA</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>        
+          <li><a class="nav-link scrollto" href="#portfolio">Portofolio Wisata</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('static/img/slide/slide1.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <p class="animate__animated animate__fadeInDown">Hello, <span>Selamat <span>Datang</span></p>
+                <h2 class="animate__animated animate__fadeInDown">Sistem Rekomendasi Wisata di Daerah Istimewa Yogyakarta (DIY)</span></h2>
+                <p class="animate__animated animate__fadeInDown">Ayo prediksi tipe wisata yang Anda inginkan!</p>
+                <a href="{{url_for('form_m') }}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Prediksi </a>
+              </div>
+            </div>
+          </div>
+
+         
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('static/img/slide/slide3.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">See Our Portofolio!</h2>
+                <p class="animate__animated animate__fadeInUp">Di sini kamu dapat menemukan destinasi wisata sesuai tipe wisata yang ingin kamu cari.</p>
+                <a href="#portfolio" class="btn-get-started animate__animated animate__fadeInUp scrollto">Portofolio Wisata</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 video-box">
+            <img src="static/img/logoewwa.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+            <div class="section-title">
+              <h2>Tentang Kami</h2>
+              <p style="text-align: justify;">Sistem Rekomendasi Wisata merupakan sebuah platform website yang dapat digunakan untuk mencari rekomendasi-rekomendasi tempat wisata yang ada di Daerah Istimewa Yogyakarta (DIY). Platform ini bertujuan untuk memudahkan pengguna untuk mencari tempat wisata terbaik berdasarkan kriteria yang diinginkan pengguna.</p>
+              <p style="text-align: justify;">Anda dapat melakukan pencarian destinasi wisata terbaik pada platform ini melalui fitur Prediksi. Anda hanya perlu menginputkan beberapa data yang diperlukan, maka akan muncul hasil rekomendasi wisata yang sesuai inputan Anda.</p>
+              <p style="text-align: justify;">Adapun terdapat fitur Portofolio yang akan memudahkan Anda untuk melihat secara detail destinasi-destinasi wisata yang ada di Daerah Istimewa Yogyakarta (DIY).</p>
+              <p style="text-align: justify;">Mari temukan wisata favoritmu!</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+   
+    <!-- ======= Counts Section ======= -->
+    <section class="counts section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-simple-smile" style="color: #20b38e;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="147" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Alam</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-document-folder" style="color: #c042ff;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="36" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Alam dan Buatan</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="count-box">
+              <i class="bi bi-live-support" style="color: #46d1ff;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Buatan</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="count-box">
+              <i class="bi bi-users-alt-5" style="color: #ffb459;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Agrowisata</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="count-box">
+              <i class="bi bi-users-alt-5" style="color: #ffb459;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Budaya dan Sejarah</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Portofolio</h2>
+          <p>Di bawah ini merupakan Portofolio Tempat Wisata di Daerah Istimewa Yogyakarta (DIY).</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-alam">Alam</li>
+              <li data-filter=".filter-alam_dan_buatan">Alam dan Buatan</li>
+              <li data-filter=".filter-buatan">Buatan</li>
+              <li data-filter=".filter-agrowisata">Agrowisata</li>
+              <li data-filter=".filter-budaya_dan_sejarah">Budaya dan Sejarah</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-alam">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/ALAM/1. air terjun lepo_a.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Air Terjun Lepo</h4>
+                <p>Alam</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/ALAM/1. air terjun lepo_a.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Air Terjun Lepo"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofolioalam') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-budaya_dan_sejarah">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/BUDAYA DAN SEJARAH/1. CANDI BOROBUDUR.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Candi Borobudur</h4>
+                <p>Budaya dan Sejarah</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/BUDAYA DAN SEJARAH/1. CANDI BOROBUDUR.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Candi Borobudur"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofoliobudaya') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-buatan">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/BUATAN/16. heha.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Heha Sky View</h4>
+                <p>Buatan</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/BUATAN/16. heha.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Heha Sky View"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofoliobuatan') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-agrowisata">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/AGROWISATA/9. WANA TIRTA MANGROVE FORESTS.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Wana Tirta Mangrove Forests</h4>
+                <p>Agrowisata</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/AGROWISATA/9. WANA TIRTA MANGROVE FORESTS.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Wana Tirta Mangrove Forests"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofolioagrowisata') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-buatan">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/BUATAN/1. Malioboro.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Kawasan Wisata Malioboro</h4>
+                <p>Buatan</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/BUATAN/1. Malioboro.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Kawasan Wisata Malioboro"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofoliobuatan') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-alam_dan_buatan">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/ALAM DAN BUATAN/1. EMBUNG BATARAN SRITEN.webp" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Embung Batara Sriten</h4>
+                <p>Alam dan Buatan</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/ALAM DAN BUATAN/1. EMBUNG BATARAN SRITEN.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Embung Batara Sriten"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofolioalambuatan') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-agrowisata">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/AGROWISATA/1. GARDU PANDANG MANGUNAN.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Gardu Pandang Mangunan</h4>
+                <p>Agrowisata</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/AGROWISATA/1. GARDU PANDANG MANGUNAN.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gardu Pandang Mangunan"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofolioagrowisata') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-budaya_dan_sejarah">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/BUDAYA DAN SEJARAH/20. MUSEUM MONUMEN PANGERAN DIPONEGORO.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>MUSEUM MONUMEN PANGERAN DIPONEGORO</h4>
+                <p>Budaya dan Sejarah</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/BUDAYA DAN SEJARAH/20. MUSEUM MONUMEN PANGERAN DIPONEGORO.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="MUSEUM MONUMEN PANGERAN DIPONEGORO"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofoliobuatan') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-alam">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/ALAM/10. Hutan Pinus Asri_a.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Hutan Pinus Asri</h4>
+                <p>Alam</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/ALAM/10. Hutan Pinus Asri_a.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hutan Pinus Asri"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofolioalam') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-buatan">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/BUATAN/11. Embung Tambakboyo.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Embung Tambakboyo</h4>
+                <p>Buatan</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/BUATAN/11. Embung Tambakboyo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Embung Tambakboyo"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofoliobuatan') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-budaya_dan_sejarah">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/BUDAYA DAN SEJARAH/8. MONUMEN JOGJA KEMBALI.jpg.crdownload.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Monumen Yogya Kembali</h4>
+                <p>Budaya dan Sejarah</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/BUDAYA DAN SEJARAH/8. MONUMEN JOGJA KEMBALI.jpg.crdownload.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Monumen Yogya Kembali"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofoliobudaya') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-alam_dan_buatan">
+            <div class="portfolio-wrap">
+              <img src="static/img/portfolio/ALAM DAN BUATAN/17. MUSEUM SATWA GEMBIRA LOKA ZOO.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Museum Satwa Gembira Loka Zoo</h4>
+                <p>Alam dan Buatan</p>
+                <div class="portfolio-links">
+                  <a href="static/img/portfolio/ALAM DAN BUATAN/17. MUSEUM SATWA GEMBIRA LOKA ZOO.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Museum Satwa Gembira Loka Zoo"><i class="bi bi-plus"></i></a>
+                  <a href="{{url_for('portofolioalambuatan') }}" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="{{url_for('static', filename='style copy.css')}}">
+<head>            
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+    <title>Portofolio Details - Proyek Akhir - Kelompok 6 (Cemara)</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+      
+    <!-- Favicons -->
+    <link href="static/img/favicon.png" rel="icon">
+    <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+      
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+      
+    <!-- Vendor CSS Files -->
+    <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="../static/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem rekomendasi wisata DIY</title>
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+
+        <div class="logo me-auto">
+            <h1><a href="index.html">SIRWITA</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
+            <li><a class="nav-link scrollto" href="#portfolio">Portofolio Wisata</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="static\img\archeologist.png"/>
+        </div>
+        <form action="{{url_for('predict')}}" method="post">
+            <h3>Sistem Rekomendasi Wisata Daerah Istimewa Yogyakarta</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Rating" class="form-label">Rating</label>
+                        <input type="text" name="Rating" class="form-control" id="Rating" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Ulasan" class="form-label">Ulasan</label>
+                        <input type="text" name="Ulasan" class="form-control" id="Ulasan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rata2_tiket" class="form-label">Rata-rata Tiket</label>
+                        <input type="text" name="rata2_tiket" class="form-control" id="rata2_tiket" required>
+                    </div>
+                    <div>
+                         <button type="submit" class="btn btn-success">prediksi</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <h4>Hasil Prediksi </h4>
+                        <p class="text-center">Tipe wisata yang direkomendasikan adalah<span class="fw-bold">{{rec}}</span></p>
+                        <p class="text-center">Rekomendasi Tempat Wisata : <span class="fw-bold">{{rec_str}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- <br>
+    <br>
+    <h3 class="text-center">Hasil Prediksi</h3>
+        {% if hasil_prediksi %}
+        <p class="text-center">Tipe wisata yang direkomendasikan <span class="fw-bold">{{hasil_prediksi}}</span></p>
+        {% endif %}
+        
+        <p class="text-center">wisata yang direkomendasikan <span class="fw-bold">{{rekomendasi}}</span></p> -->
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
